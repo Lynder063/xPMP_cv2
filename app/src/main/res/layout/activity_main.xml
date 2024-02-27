@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editTextProduct1Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cena zboží 1" />
+
+    <EditText
+        android:id="@+id/editTextProduct1Quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Množství zboží 1 (g, ml)" />
+
+    <EditText
+        android:id="@+id/editTextProduct2Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cena zboží 2" />
+
+    <EditText
+        android:id="@+id/editTextProduct2Quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Množství zboží 2 (g, ml)" />
+
+    <Button
+        android:id="@+id/buttonCompare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Porovnat ceny" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="16dp"
+        android:text="Výsledek porovnání cen:"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
